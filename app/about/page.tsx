@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import CTA from '@/components/CTA';
 import { generateBreadcrumbSchema } from '@/lib/schema';
 
@@ -60,12 +61,15 @@ export default function AboutPage() {
                 We&apos;re not a big national company with a call center somewhere far away. We&apos;re your neighbors, and we treat your business the way we&apos;d want ours to be treated.
               </p>
             </div>
-            <div className="image-placeholder aspect-[4/3] w-full">
-              <span className="text-center px-4">
-                Team Photo or Office Image
-                <br />
-                <span className="text-xs">(600x450)</span>
-              </span>
+            <div className="relative aspect-[4/3] w-full rounded-lg overflow-hidden shadow-lg">
+              <Image
+                src="/images/team-photo.jpg"
+                alt="Brian and his wife - the team behind With It Payments in Fruita, Colorado"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                priority
+              />
             </div>
           </div>
         </div>
@@ -163,12 +167,14 @@ export default function AboutPage() {
                 Contact Us
               </Link>
             </div>
-            <div className="image-placeholder aspect-video w-full">
-              <span className="text-center px-4">
-                Office exterior or local Colorado imagery
-                <br />
-                <span className="text-xs">(600x400)</span>
-              </span>
+            <div className="relative aspect-video w-full rounded-lg overflow-hidden shadow-lg">
+              <Image
+                src="/images/team-photo.jpg"
+                alt="With It Payments team - local payment processing in Fruita, Colorado"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
             </div>
           </div>
         </div>

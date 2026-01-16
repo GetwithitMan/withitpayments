@@ -1,0 +1,356 @@
+================================================================================
+                    WITH IT PAYMENTS - IMAGES NEEDED LIST
+================================================================================
+
+This document lists all placeholder images that need to be replaced with real
+images. Images should be placed in the /public folder and referenced accordingly.
+
+Recommended image format: WebP or optimized JPG/PNG
+Tip: Use https://squoosh.app or similar tools to optimize images before uploading.
+
+================================================================================
+                              SUMMARY
+================================================================================
+
+Total images needed: 34
+Categories:
+  - Hero/Homepage: 3 images
+  - About Page: 2 images
+  - Terminal Products: 15 images
+  - Industry Pages: 7 images
+  - Service Area Pages: 4 images
+  - Logos/Badges: 3 sets (5 logos each)
+
+================================================================================
+                         PRIORITY 1 - HOMEPAGE
+================================================================================
+
+1. HERO IMAGE
+   File: components/Hero.tsx (line 75)
+   Size: 600x450px (aspect ratio 4:3)
+   Description: Terminal in use at business counter
+   Suggested: Photo of a payment terminal being used in a real business setting
+   Save as: /public/images/hero-terminal.webp
+
+2. TERMINAL TYPES GRID (3 images)
+   File: app/page.tsx (line 191)
+   Size: 400x300px each (aspect ratio 4:3)
+   Images needed:
+   - Countertop terminal image → /public/images/terminal-countertop.webp
+   - Mobile terminal image → /public/images/terminal-mobile.webp
+   - Smart terminal image → /public/images/terminal-smart.webp
+
+3. LOCAL SERVICE AREA IMAGE
+   File: app/page.tsx (line 287)
+   Size: 600x400px (aspect ratio 16:9)
+   Description: Map or local Colorado imagery
+   Suggested: Photo of Grand Junction/Fruita area or Western Slope landscape
+   Save as: /public/images/western-slope-colorado.webp
+
+================================================================================
+                         PRIORITY 2 - ABOUT PAGE
+================================================================================
+
+4. TEAM/OFFICE PHOTO
+   File: app/about/page.tsx (line 63)
+   Size: 600x450px (aspect ratio 4:3)
+   Description: Team photo or office image
+   Suggested: Photo of your team or your office/storefront
+   Save as: /public/images/about-team.webp
+
+5. COMPANY STORY IMAGE
+   File: app/about/page.tsx (line 166)
+   Size: 600x338px (aspect ratio 16:9 video)
+   Description: Video placeholder or company story visual
+   Suggested: Business owner photo, storefront, or local community image
+   Save as: /public/images/about-story.webp
+
+================================================================================
+                    PRIORITY 3 - TERMINAL BRAND PAGES
+================================================================================
+
+6. DEJAVOO TERMINALS
+   File: app/terminals/dejavoo/page.tsx
+
+   Main product image (line 106):
+   Size: 500x500px (square)
+   Save as: /public/images/terminals/dejavoo-main.webp
+
+   Model variants (line 132) - one image per model:
+   Size: 300x300px each (square)
+   - Dejavoo Z11 → /public/images/terminals/dejavoo-z11.webp
+   - Dejavoo QD2 → /public/images/terminals/dejavoo-qd2.webp
+   - Dejavoo QD4 → /public/images/terminals/dejavoo-qd4.webp
+   (Check file for exact model names)
+
+7. PAX TERMINALS
+   File: app/terminals/pax/page.tsx
+
+   Main product image (line 106):
+   Size: 500x500px (square)
+   Save as: /public/images/terminals/pax-main.webp
+
+   Model variants (line 132):
+   Size: 300x300px each (square)
+   - PAX A80 → /public/images/terminals/pax-a80.webp
+   - PAX A920 → /public/images/terminals/pax-a920.webp
+   - PAX A35 → /public/images/terminals/pax-a35.webp
+   (Check file for exact model names)
+
+8. VERIFONE TERMINAL
+   File: app/terminals/verifone/page.tsx (line 85)
+   Size: 500x500px (square)
+   Save as: /public/images/terminals/verifone-main.webp
+
+9. INGENICO TERMINAL
+   File: app/terminals/ingenico/page.tsx (line 85)
+   Size: 500x500px (square)
+   Save as: /public/images/terminals/ingenico-main.webp
+
+10. CLOVER TERMINALS
+    File: app/terminals/clover/page.tsx
+
+    Main product image (line 106):
+    Size: 500x500px (square)
+    Save as: /public/images/terminals/clover-main.webp
+
+    Model variants (line 132):
+    Size: 300x300px each (square)
+    - Clover Flex → /public/images/terminals/clover-flex.webp
+    - Clover Mini → /public/images/terminals/clover-mini.webp
+    - Clover Station → /public/images/terminals/clover-station.webp
+    (Check file for exact model names)
+
+================================================================================
+                   PRIORITY 4 - TERMINAL TYPE PAGES
+================================================================================
+
+11. COUNTERTOP TERMINALS PAGE
+    File: app/terminals/countertop/page.tsx (line 58)
+    Size: 600x450px (aspect ratio 4:3)
+    Description: Countertop terminal in retail setting
+    Save as: /public/images/terminals/countertop-hero.webp
+
+12. MOBILE TERMINALS PAGE
+    File: app/terminals/mobile/page.tsx (line 58)
+    Size: 600x450px (aspect ratio 4:3)
+    Description: Mobile terminal being used (food truck, delivery, etc.)
+    Save as: /public/images/terminals/mobile-hero.webp
+
+13. SMART TERMINALS PAGE
+    File: app/terminals/smart/page.tsx (line 58)
+    Size: 600x450px (aspect ratio 4:3)
+    Description: Smart terminal with touchscreen display
+    Save as: /public/images/terminals/smart-hero.webp
+
+================================================================================
+                       PRIORITY 5 - INDUSTRY PAGES
+================================================================================
+
+14. RETAIL INDUSTRY
+    File: app/industries/retail/page.tsx (line 57)
+    Size: 600x450px (aspect ratio 4:3)
+    Description: Retail store checkout with terminal
+    Save as: /public/images/industries/retail.webp
+
+15. RESTAURANTS INDUSTRY
+    File: app/industries/restaurants/page.tsx (line 57)
+    Size: 600x450px (aspect ratio 4:3)
+    Description: Restaurant/cafe payment scene
+    Save as: /public/images/industries/restaurant.webp
+
+16. SALONS INDUSTRY
+    File: app/industries/salons/page.tsx (line 57)
+    Size: 600x450px (aspect ratio 4:3)
+    Description: Salon/barbershop checkout
+    Save as: /public/images/industries/salon.webp
+
+17. FOOD TRUCKS INDUSTRY
+    File: app/industries/food-trucks/page.tsx (line 57)
+    Size: 600x450px (aspect ratio 4:3)
+    Description: Food truck with mobile payment
+    Save as: /public/images/industries/food-truck.webp
+
+18. MEDICAL INDUSTRY
+    File: app/industries/medical/page.tsx (line 57)
+    Size: 600x450px (aspect ratio 4:3)
+    Description: Medical/dental office reception
+    Save as: /public/images/industries/medical.webp
+
+19. PROFESSIONAL SERVICES
+    File: app/industries/professional-services/page.tsx (line 57)
+    Size: 600x450px (aspect ratio 4:3)
+    Description: Professional office setting
+    Save as: /public/images/industries/professional.webp
+
+20. AUTO REPAIR INDUSTRY
+    File: app/industries/auto-repair/page.tsx (line 57)
+    Size: 600x450px (aspect ratio 4:3)
+    Description: Auto repair shop checkout
+    Save as: /public/images/industries/auto-repair.webp
+
+================================================================================
+                     PRIORITY 6 - SERVICE AREA PAGES
+================================================================================
+
+21. SERVICE AREA OVERVIEW - MAP
+    File: app/service-area/page.tsx (line 116)
+    Size: 500x500px (square)
+    Description: Map of Western Slope Colorado service area
+    Save as: /public/images/service-area/western-slope-map.webp
+
+22. SERVICE AREA OVERVIEW - VIDEO/BANNER
+    File: app/service-area/page.tsx (line 204)
+    Size: 600x338px (aspect ratio 16:9)
+    Description: Local Colorado scenery or service montage
+    Save as: /public/images/service-area/colorado-banner.webp
+
+23. GRAND JUNCTION PAGE
+    File: app/service-area/grand-junction/page.tsx (line 111)
+    Size: 600x450px (aspect ratio 4:3)
+    Description: Grand Junction area imagery
+    Suggested: Downtown Grand Junction, Colorado National Monument, or Main Street
+    Save as: /public/images/service-area/grand-junction.webp
+
+24. FRUITA PAGE
+    File: app/service-area/fruita/page.tsx (line 60)
+    Size: 600x450px (aspect ratio 4:3)
+    Description: Fruita area imagery
+    Suggested: Downtown Fruita, Mike the Headless Chicken statue, or local scenery
+    Save as: /public/images/service-area/fruita.webp
+
+25. WESTERN SLOPE PAGE
+    File: app/service-area/western-slope/page.tsx (line 138)
+    Size: 600x450px (aspect ratio 4:3)
+    Description: Western Slope Colorado landscape
+    Suggested: Mountain views, vineyards, or scenic Colorado imagery
+    Save as: /public/images/service-area/western-slope.webp
+
+================================================================================
+                         PRIORITY 7 - LOGOS
+================================================================================
+
+26. TRUST BADGES / PARTNER LOGOS
+    File: components/TrustBadges.tsx (line 20)
+    Size: 128x48px each (w-32 h-12)
+    Logos needed (transparent PNG recommended):
+    - Visa logo → /public/images/logos/visa.png
+    - Mastercard logo → /public/images/logos/mastercard.png
+    - American Express logo → /public/images/logos/amex.png
+    - Discover logo → /public/images/logos/discover.png
+    - Apple Pay logo → /public/images/logos/apple-pay.png
+
+27. TERMINALS PAGE - BRAND LOGOS
+    File: app/terminals/page.tsx (line 166)
+    Size: 96x48px each (w-24 h-12)
+    Logos needed:
+    - Dejavoo logo → /public/images/logos/dejavoo.png
+    - PAX logo → /public/images/logos/pax.png
+    - Verifone logo → /public/images/logos/verifone.png
+    - Ingenico logo → /public/images/logos/ingenico.png
+    - Clover logo → /public/images/logos/clover.png
+
+================================================================================
+                      FOLDER STRUCTURE TO CREATE
+================================================================================
+
+/public/
+  /images/
+    hero-terminal.webp
+    western-slope-colorado.webp
+    about-team.webp
+    about-story.webp
+    /terminals/
+      dejavoo-main.webp
+      dejavoo-z11.webp
+      dejavoo-qd2.webp
+      dejavoo-qd4.webp
+      pax-main.webp
+      pax-a80.webp
+      pax-a920.webp
+      pax-a35.webp
+      verifone-main.webp
+      ingenico-main.webp
+      clover-main.webp
+      clover-flex.webp
+      clover-mini.webp
+      clover-station.webp
+      countertop-hero.webp
+      mobile-hero.webp
+      smart-hero.webp
+    /industries/
+      retail.webp
+      restaurant.webp
+      salon.webp
+      food-truck.webp
+      medical.webp
+      professional.webp
+      auto-repair.webp
+    /service-area/
+      western-slope-map.webp
+      colorado-banner.webp
+      grand-junction.webp
+      fruita.webp
+      western-slope.webp
+    /logos/
+      visa.png
+      mastercard.png
+      amex.png
+      discover.png
+      apple-pay.png
+      dejavoo.png
+      pax.png
+      verifone.png
+      ingenico.png
+      clover.png
+
+================================================================================
+                           IMAGE SOURCES
+================================================================================
+
+Where to get images:
+
+TERMINAL PRODUCT IMAGES:
+- Request from your terminal provider/distributor
+- Manufacturer websites (Dejavoo, PAX, Verifone, Ingenico, Clover)
+- Check if they have media kits or dealer resources
+
+STOCK PHOTOS (Industries, Local):
+- Unsplash (free): https://unsplash.com
+- Pexels (free): https://pexels.com
+- Shutterstock (paid): https://shutterstock.com
+- Adobe Stock (paid): https://stock.adobe.com
+
+LOCAL COLORADO PHOTOS:
+- Take your own photos of Grand Junction/Fruita
+- Colorado Tourism Board media resources
+- Local Chamber of Commerce
+
+LOGOS:
+- Official brand resources pages
+- Payment network brand centers (Visa, Mastercard, etc.)
+
+================================================================================
+                              NOTES
+================================================================================
+
+1. All images should be optimized for web (compressed)
+2. Use WebP format when possible for better compression
+3. Provide 2x versions for retina displays if needed
+4. Ensure you have rights/licenses for any stock photos used
+5. Terminal manufacturer images may require dealer authorization
+
+After adding images, update the code to reference them using Next.js Image component:
+
+Example:
+  import Image from 'next/image';
+
+  <Image
+    src="/images/hero-terminal.webp"
+    alt="Payment terminal in use"
+    width={600}
+    height={450}
+    priority  // for above-the-fold images
+  />
+
+================================================================================

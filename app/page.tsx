@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import Hero from '@/components/Hero';
 import HowItWorks from '@/components/HowItWorks';
 import TrustBadges from '@/components/TrustBadges';
@@ -284,12 +285,14 @@ export default function Home() {
                 View Service Area
               </Link>
             </div>
-            <div className="image-placeholder aspect-video w-full">
-              <span className="text-center px-4">
-                Map or local Colorado imagery
-                <br />
-                <span className="text-xs">(600x400)</span>
-              </span>
+            <div className="relative aspect-video w-full rounded-lg overflow-hidden shadow-lg">
+              <Image
+                src="/images/team-photo.jpg"
+                alt="Brian and his wife - the local team behind With It Payments serving Grand Junction, Fruita, and the Western Slope"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
             </div>
           </div>
         </div>
