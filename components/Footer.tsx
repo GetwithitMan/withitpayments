@@ -19,6 +19,7 @@ const footerNavigation = {
     { name: 'How It Works', href: '/how-it-works' },
     { name: 'Pricing', href: '/pricing' },
     { name: 'Contact', href: '/contact' },
+    { name: 'SMS Updates', href: '/sms-signup' },
   ],
   serviceArea: [
     { name: 'Grand Junction', href: '/service-area/grand-junction' },
@@ -142,7 +143,13 @@ export default function Footer() {
             <p className="text-xs text-gray-400">
               &copy; {new Date().getFullYear()} With It Payments. All rights reserved.
             </p>
-            <div className="mt-4 md:mt-0 flex items-center space-x-4">
+            <div className="mt-4 md:mt-0 flex items-center space-x-6">
+              <Link href="/privacy" className="text-xs text-gray-400 hover:text-[var(--secondary)] transition-colors">
+                Privacy Policy
+              </Link>
+              <Link href="/terms" className="text-xs text-gray-400 hover:text-[var(--secondary)] transition-colors">
+                Terms of Service
+              </Link>
               <span className="text-xs text-gray-400">Proudly serving Colorado&apos;s Western Slope</span>
             </div>
           </div>
