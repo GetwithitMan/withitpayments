@@ -200,6 +200,67 @@ export default function PrivacyPage() {
               </p>
             </div>
 
+            {/* Payment Processing and Financial Data */}
+            <div className="mb-8 bg-blue-50 p-6 rounded-lg border border-blue-200">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">Payment Processing and Financial Data</h2>
+              <p className="text-gray-600 mb-4">
+                When you engage our payment processing services or make payments through our platform, certain financial information may be collected and processed. This section describes how payment data is handled.
+              </p>
+
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Payment Information We Process</h3>
+              <p className="text-gray-600 mb-4">In connection with payment processing services, the following information may be collected:</p>
+              <ul className="list-disc pl-6 text-gray-600 mb-4 space-y-2">
+                <li><strong>Cardholder Data:</strong> Credit/debit card numbers, expiration dates, and security codes (CVV/CVC)</li>
+                <li><strong>Bank Account Information:</strong> For ACH/eCheck transactions, when applicable</li>
+                <li><strong>Billing Information:</strong> Billing name, address, email, and phone number</li>
+                <li><strong>Transaction Data:</strong> Purchase amounts, dates, times, and merchant information</li>
+              </ul>
+
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Third-Party Payment Processors</h3>
+              <p className="text-gray-600 mb-4">
+                Payment card data and financial transactions are processed through PCI DSS-compliant third-party payment gateways and processors, which may include:
+              </p>
+              <ul className="list-disc pl-6 text-gray-600 mb-4 space-y-2">
+                <li><strong>Authorize.net:</strong> Payment gateway services</li>
+                <li><strong>NMI (Network Merchants Inc.):</strong> Payment gateway and processing services</li>
+                <li><strong>Other Payment Processors:</strong> As required for specific terminal or processing solutions</li>
+              </ul>
+              <p className="text-gray-600 mb-4">
+                These third-party processors have their own privacy policies governing the collection and use of payment data. We encourage you to review their privacy policies:
+              </p>
+              <ul className="list-disc pl-6 text-gray-600 mb-4 space-y-2">
+                <li>Authorize.net Privacy Policy: <a href="https://www.authorize.net/about-us/privacy/" target="_blank" rel="noopener noreferrer" className="text-[var(--primary)] hover:underline">authorize.net/about-us/privacy</a></li>
+                <li>NMI Privacy Policy: <a href="https://www.nmi.com/policy/privacy/" target="_blank" rel="noopener noreferrer" className="text-[var(--primary)] hover:underline">nmi.com/policy/privacy</a></li>
+              </ul>
+
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">PCI DSS Compliance</h3>
+              <p className="text-gray-600 mb-4">
+                We are committed to maintaining the security of payment card data in accordance with the Payment Card Industry Data Security Standard (PCI DSS). Our approach includes:
+              </p>
+              <ul className="list-disc pl-6 text-gray-600 mb-4 space-y-2">
+                <li><strong>No Storage of Sensitive Card Data:</strong> We do not store full credit card numbers, CVV codes, or magnetic stripe data on our servers</li>
+                <li><strong>Tokenization:</strong> When card data must be referenced, we use secure tokenization through our payment gateway partners</li>
+                <li><strong>Encrypted Transmission:</strong> All payment data is transmitted using TLS 1.2 or higher encryption</li>
+                <li><strong>PCI-Compliant Partners:</strong> We only work with payment processors and gateways that maintain PCI DSS certification</li>
+                <li><strong>Regular Security Assessments:</strong> We conduct ongoing security reviews and maintain compliance with PCI DSS requirements</li>
+              </ul>
+
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">How Payment Data is Used</h3>
+              <p className="text-gray-600 mb-4">Payment information is used solely for:</p>
+              <ul className="list-disc pl-6 text-gray-600 mb-4 space-y-2">
+                <li>Processing your payment transactions</li>
+                <li>Preventing fraud and unauthorized transactions</li>
+                <li>Resolving disputes and chargebacks</li>
+                <li>Complying with legal and regulatory requirements</li>
+                <li>Providing transaction receipts and records</li>
+              </ul>
+
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Financial Data Retention</h3>
+              <p className="text-gray-600">
+                Transaction records are retained for 7 years as required by tax and financial regulations. Tokenized payment references may be retained for recurring billing purposes until you cancel your service or request deletion. Actual card numbers are not stored by With It Payments; they are processed and stored by our PCI-compliant payment gateway partners.
+              </p>
+            </div>
+
             {/* Data Security */}
             <div className="mb-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">Data Security</h2>
@@ -211,6 +272,8 @@ export default function PrivacyPage() {
                 <li>Secure hosting with reputable providers</li>
                 <li>Access controls limiting who can access personal data</li>
                 <li>Regular security assessments</li>
+                <li>PCI DSS compliance for payment processing</li>
+                <li>Secure payment page scripts with integrity monitoring (per PCI DSS 4.0 requirements)</li>
               </ul>
               <p className="text-gray-600">
                 However, no method of transmission over the Internet or electronic storage is 100% secure. While we strive to protect your information, we cannot guarantee absolute security.

@@ -176,7 +176,7 @@ export default function TermsPage() {
 
             {/* Intellectual Property */}
             <div className="mb-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">6. Intellectual Property</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">8. Intellectual Property</h2>
               <p className="text-gray-600 mb-4">
                 All content on this Site, including text, graphics, logos, images, and software, is the property of With It Payments or our licensors and is protected by copyright, trademark, and other intellectual property laws.
               </p>
@@ -187,7 +187,7 @@ export default function TermsPage() {
 
             {/* Prohibited Uses */}
             <div className="mb-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">7. Prohibited Uses</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">9. Prohibited Uses</h2>
               <p className="text-gray-600 mb-4">You agree not to use our Site or Services to:</p>
               <ul className="list-disc pl-6 text-gray-600 mb-4 space-y-2">
                 <li>Violate any applicable laws or regulations</li>
@@ -202,9 +202,76 @@ export default function TermsPage() {
               </ul>
             </div>
 
+            {/* Payment Processing Terms */}
+            <div className="mb-8 bg-green-50 p-6 rounded-lg border border-green-200">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">6. Payment Processing Terms</h2>
+              <p className="text-gray-600 mb-4">
+                This section governs the use of payment processing services, including point-of-sale (POS) systems, payment gateways, and online payment acceptance. These terms comply with Payment Card Industry (PCI) requirements and payment network rules.
+              </p>
+
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">6.1 Payment Gateway Services</h3>
+              <p className="text-gray-600 mb-4">
+                Payment processing services are provided through PCI DSS-compliant third-party payment gateways, which may include Authorize.net, NMI (Network Merchants Inc.), and other approved processors. By using our payment services, you agree to the additional terms imposed by these providers.
+              </p>
+
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">6.2 PCI DSS Compliance Requirements</h3>
+              <p className="text-gray-600 mb-4">As a merchant using our payment processing services, you agree to:</p>
+              <ul className="list-disc pl-6 text-gray-600 mb-4 space-y-2">
+                <li>Maintain compliance with the Payment Card Industry Data Security Standard (PCI DSS) applicable to your merchant level</li>
+                <li>Complete an annual PCI Self-Assessment Questionnaire (SAQ) or third-party assessment as required</li>
+                <li>Implement and maintain required security controls as specified by PCI DSS version 4.0</li>
+                <li>Protect cardholder data and prevent unauthorized access</li>
+                <li>Report any suspected data breach or security incident immediately</li>
+                <li>Comply with all requirements effective March 31, 2025, including script integrity monitoring for payment pages</li>
+              </ul>
+
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">6.3 Payment Network Rules</h3>
+              <p className="text-gray-600 mb-4">You agree to comply with all applicable payment network rules, including those of:</p>
+              <ul className="list-disc pl-6 text-gray-600 mb-4 space-y-2">
+                <li>Visa</li>
+                <li>Mastercard</li>
+                <li>American Express</li>
+                <li>Discover</li>
+                <li>Any other payment networks through which you process transactions</li>
+              </ul>
+
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">6.4 Merchant Obligations</h3>
+              <p className="text-gray-600 mb-4">As a merchant, you are responsible for:</p>
+              <ul className="list-disc pl-6 text-gray-600 mb-4 space-y-2">
+                <li><strong>Accurate Business Information:</strong> Providing and maintaining accurate business details, including your legal entity name, EIN/Tax ID, business address, and contact information</li>
+                <li><strong>Transaction Legitimacy:</strong> Ensuring all transactions processed are for legitimate goods or services provided by your business</li>
+                <li><strong>Refund and Cancellation Policies:</strong> Clearly displaying your refund, return, and cancellation policies to customers</li>
+                <li><strong>Customer Data Protection:</strong> Implementing appropriate measures to protect customer payment data</li>
+                <li><strong>Chargeback Management:</strong> Responding to and managing chargebacks and disputes in accordance with payment network rules</li>
+                <li><strong>Prohibited Transactions:</strong> Not processing transactions for prohibited goods or services as defined by payment networks</li>
+              </ul>
+
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">6.5 Online Payment Requirements</h3>
+              <p className="text-gray-600 mb-4">For e-commerce and online payment acceptance:</p>
+              <ul className="list-disc pl-6 text-gray-600 mb-4 space-y-2">
+                <li>Payment pages must use HTTPS with TLS 1.2 or higher encryption</li>
+                <li>You must display clear pricing, including any taxes or fees, before checkout</li>
+                <li>A link to your privacy policy must be accessible from any page where payment information is collected</li>
+                <li>Customer consent must be obtained before storing payment credentials for future transactions</li>
+                <li>Recurring billing must include clear disclosure of terms and easy cancellation options</li>
+              </ul>
+
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">6.6 Third-Party Service Provider Terms</h3>
+              <p className="text-gray-600 mb-4">
+                Use of payment gateway services is also subject to the terms and conditions of our payment processing partners:
+              </p>
+              <ul className="list-disc pl-6 text-gray-600 mb-4 space-y-2">
+                <li><strong>Authorize.net:</strong> Subject to the <a href="https://www.authorize.net/about-us/terms/" target="_blank" rel="noopener noreferrer" className="text-[var(--primary)] hover:underline">Authorize.net Service Agreement</a></li>
+                <li><strong>NMI:</strong> Subject to <a href="https://www.nmi.com/policy/terms-conditions-for-nmis-services-merchant-terms-and-conditions/" target="_blank" rel="noopener noreferrer" className="text-[var(--primary)] hover:underline">NMI Merchant Terms and Conditions</a></li>
+              </ul>
+              <p className="text-gray-600">
+                In the event of any conflict between these Terms and the terms of a third-party payment processor, the more restrictive terms shall apply with respect to payment processing activities.
+              </p>
+            </div>
+
             {/* Payment Terms */}
             <div className="mb-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">8. Payment Terms</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">7. Fees and Billing</h2>
               <p className="text-gray-600 mb-4">
                 Fees for our Services are as quoted and agreed upon in your merchant agreement or service contract. Payment processing fees, terminal costs, and other charges will be clearly disclosed before you commit to any services.
               </p>
@@ -215,7 +282,7 @@ export default function TermsPage() {
 
             {/* Disclaimer of Warranties */}
             <div className="mb-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">9. Disclaimer of Warranties</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">10. Disclaimer of Warranties</h2>
               <p className="text-gray-600 mb-4">
                 THE SITE AND SERVICES ARE PROVIDED &quot;AS IS&quot; AND &quot;AS AVAILABLE&quot; WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
               </p>
@@ -226,7 +293,7 @@ export default function TermsPage() {
 
             {/* Limitation of Liability */}
             <div className="mb-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">10. Limitation of Liability</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">11. Limitation of Liability</h2>
               <p className="text-gray-600 mb-4">
                 TO THE FULLEST EXTENT PERMITTED BY LAW, WITH IT PAYMENTS SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS, DATA, OR BUSINESS OPPORTUNITIES, ARISING FROM YOUR USE OF THE SITE OR SERVICES.
               </p>
@@ -237,7 +304,7 @@ export default function TermsPage() {
 
             {/* Indemnification */}
             <div className="mb-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">11. Indemnification</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">12. Indemnification</h2>
               <p className="text-gray-600">
                 You agree to indemnify, defend, and hold harmless With It Payments, its officers, directors, employees, and agents from any claims, damages, losses, liabilities, and expenses (including reasonable attorneys&apos; fees) arising from your use of the Site or Services, your violation of these Terms, or your violation of any rights of a third party.
               </p>
@@ -245,7 +312,7 @@ export default function TermsPage() {
 
             {/* Termination */}
             <div className="mb-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">12. Termination</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">13. Termination</h2>
               <p className="text-gray-600 mb-4">
                 We may suspend or terminate your access to the Site or Services at any time, with or without cause, and with or without notice. Upon termination, your right to use the Site and Services will immediately cease.
               </p>
@@ -256,7 +323,7 @@ export default function TermsPage() {
 
             {/* Governing Law */}
             <div className="mb-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">13. Governing Law and Dispute Resolution</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">14. Governing Law and Dispute Resolution</h2>
               <p className="text-gray-600 mb-4">
                 These Terms shall be governed by and construed in accordance with the laws of the State of Colorado, without regard to its conflict of law principles.
               </p>
@@ -267,7 +334,7 @@ export default function TermsPage() {
 
             {/* Changes to Terms */}
             <div className="mb-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">14. Changes to These Terms</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">15. Changes to These Terms</h2>
               <p className="text-gray-600">
                 We reserve the right to modify these Terms at any time. When we make material changes, we will update the &quot;Last Updated&quot; date and post the revised Terms on the Site. Your continued use of the Site or Services after changes are posted constitutes acceptance of the revised Terms. We encourage you to review these Terms periodically.
               </p>
@@ -275,7 +342,7 @@ export default function TermsPage() {
 
             {/* Severability */}
             <div className="mb-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">15. Severability</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">16. Severability</h2>
               <p className="text-gray-600">
                 If any provision of these Terms is found to be invalid or unenforceable, the remaining provisions shall continue in full force and effect.
               </p>
@@ -283,7 +350,7 @@ export default function TermsPage() {
 
             {/* Entire Agreement */}
             <div className="mb-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">16. Entire Agreement</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">17. Entire Agreement</h2>
               <p className="text-gray-600">
                 These Terms, together with our <Link href="/privacy" className="text-[var(--primary)] hover:underline">Privacy Policy</Link> and any applicable merchant agreements, constitute the entire agreement between you and With It Payments regarding your use of the Site and Services.
               </p>
@@ -291,7 +358,7 @@ export default function TermsPage() {
 
             {/* Contact */}
             <div className="mb-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">17. Contact Us</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">18. Contact Us</h2>
               <p className="text-gray-600 mb-4">
                 If you have any questions about these Terms of Service, please contact us:
               </p>
