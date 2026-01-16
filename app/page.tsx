@@ -141,6 +141,8 @@ export default function Home() {
         description="With It Payments helps local businesses in Grand Junction, Fruita, and the Western Slope accept credit card payments with reliable terminals, fair rates, and real support from real people."
         primaryCTA={{ text: 'Get a Free Quote', href: '/contact' }}
         secondaryCTA={{ text: 'View Terminals', href: '/terminals' }}
+        imageSrc="/images/team-photo.jpg"
+        imageAlt="Brian and his wife - the team behind With It Payments in Fruita, Colorado"
       />
 
       {/* Trust Badges */}

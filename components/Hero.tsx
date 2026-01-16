@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface HeroProps {
   title: string;
@@ -13,6 +14,8 @@ interface HeroProps {
     href: string;
   };
   showImage?: boolean;
+  imageSrc?: string;
+  imageAlt?: string;
 }
 
 export default function Hero({
@@ -22,6 +25,8 @@ export default function Hero({
   primaryCTA = { text: 'Get a Free Quote', href: '/contact' },
   secondaryCTA,
   showImage = true,
+  imageSrc,
+  imageAlt = 'With It Payments - Credit card processing for local businesses',
 }: HeroProps) {
   return (
     <section className="bg-gradient-to-br from-gray-50 to-white section-padding">
@@ -72,13 +77,26 @@ export default function Hero({
           </div>
           {showImage && (
             <div className="relative">
-              <div className="image-placeholder aspect-[4/3] w-full min-h-[300px] lg:min-h-[400px]">
-                <span className="text-center px-4">
-                  Terminal in use at business counter
-                  <br />
-                  <span className="text-xs">(600x450 recommended)</span>
-                </span>
-              </div>
+              {imageSrc ? (
+                <div className="relative aspect-[4/3] w-full min-h-[300px] lg:min-h-[400px] rounded-lg overflow-hidden shadow-lg">
+                  <Image
+                    src={imageSrc}
+                    alt={imageAlt}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    priority
+                  />
+                </div>
+              ) : (
+                <div className="image-placeholder aspect-[4/3] w-full min-h-[300px] lg:min-h-[400px]">
+                  <span className="text-center px-4">
+                    Terminal in use at business counter
+                    <br />
+                    <span className="text-xs">(600x450 recommended)</span>
+                  </span>
+                </div>
+              )}
               {/* Decorative elements */}
               <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-[var(--primary)] opacity-10 rounded-lg -z-10"></div>
               <div className="absolute -top-4 -right-4 w-32 h-32 bg-[var(--secondary)] opacity-10 rounded-lg -z-10"></div>
