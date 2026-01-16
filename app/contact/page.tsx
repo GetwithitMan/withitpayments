@@ -140,9 +140,23 @@ export default function ContactPage() {
                     title="With It Payments Location - Fruita, CO"
                   ></iframe>
                 </div>
-                <p className="text-sm text-gray-500 mt-2">
-                  Located on Highway 6&50 in Fruita, just minutes from Grand Junction.
-                </p>
+                <div className="flex items-center justify-between mt-3">
+                  <p className="text-sm text-gray-500">
+                    Located on Highway 6&50 in Fruita, just minutes from Grand Junction.
+                  </p>
+                  <a
+                    href="https://www.google.com/maps/dir/?api=1&destination=2480+Hwy+6%2650+Unit+4+Fruita+CO+81521"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-[var(--primary)] hover:text-[var(--primary-dark)] font-medium text-sm whitespace-nowrap ml-4"
+                  >
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    Get Directions
+                  </a>
+                </div>
               </div>
             </div>
           </div>
